@@ -31,7 +31,7 @@ const editetTodo = (e) => {
 const deleteTodo = (e) => {
     let dataId = e.target.dataset.id
 
-    let foundIndex = todosArr.find(item => item.id == dataId)
+    let foundIndex = todosArr.findIndex(item => item.id == dataId)
 
     todosArr.splice(foundIndex, 1)
 
